@@ -132,11 +132,11 @@ class SaguaroCache:
         """
         self._store.clear()
         fan_outs = self.compute_fan_out()
-        K = self._config.K
+        K = len(raw_logits_list)  # actual draft length, may be < config.K near EOS
         device = context_ids.device
 
         for k in range(K + 1):
-            F_k = fan_outs[k]
+            F_k = fan_outs[k] if k < len(fan_outs) else 1
 
             if k < K:
                 candidates = top_k_token_ids(raw_logits_list[k], F_k)
