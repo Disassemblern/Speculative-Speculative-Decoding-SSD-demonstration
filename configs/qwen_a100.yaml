@@ -1,0 +1,14 @@
+draft:
+  name: Qwen/Qwen2.5-1.5B-Instruct
+  device: cuda:0
+  dtype: bfloat16
+target:
+  name: Qwen/Qwen2.5-14B-Instruct
+  device: cuda:1
+  dtype: bfloat16
+defaults:
+  K: 4
+  max_new_tokens: 256
+  temperature: 1.0
+  num_prompts: 50
+  cache_budget_B: 2

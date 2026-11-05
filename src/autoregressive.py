@@ -8,7 +8,7 @@ import torch
 from transformers import PreTrainedModel, PreTrainedTokenizer
 
 from src.metrics import MetricsAccumulator, RoundResult, SessionMetrics
-from src.utils import decode, encode, get_logits, sample_token
+from src.utils import decode, encode, get_logits, is_eos, sample_token, sync_if_cuda
 
 
 def generate_autoregressive(
@@ -43,11 +43,13 @@ def generate_autoregressive(
     current_ids = input_ids
 
     for _ in range(max_new_tokens):
+        sync_if_cuda(device)
         t_start = time.perf_counter()
 
         logits, past_key_values = get_logits(model, current_ids, past_key_values)
         token_id: int = sample_token(logits, temperature)
 
+        sync_if_cuda(device)
         wall_time = time.perf_counter() - t_start
 
         result = RoundResult(
@@ -62,7 +64,7 @@ def generate_autoregressive(
         accumulator.record(result)
         generated.append(token_id)
 
-        if token_id == tokenizer.eos_token_id:
+        if is_eos(token_id, tokenizer):
             break
 
         current_ids = torch.tensor([[token_id]], dtype=torch.long, device=device)

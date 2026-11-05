@@ -11,7 +11,7 @@ from torch import Tensor
 from transformers import PreTrainedModel, PreTrainedTokenizer
 
 from src.metrics import MetricsAccumulator, RoundResult, SessionMetrics
-from src.utils import decode, encode, logits_to_probs, sample_token
+from src.utils import decode, encode, is_eos, logits_to_probs, sample_token, sync_if_cuda
 
 
 @dataclass
@@ -52,7 +52,8 @@ def draft_K_tokens(
     """
     draft_tokens: list[int] = []
     draft_probs: list[Tensor] = []
-    current_ids = input_ids
+    model_device = next(draft_model.parameters()).device
+    current_ids = input_ids.to(model_device)
 
     with torch.no_grad():
         for _ in range(K):
@@ -68,8 +69,10 @@ def draft_K_tokens(
             token_id: int = torch.multinomial(probs, num_samples=1).item()
 
             draft_tokens.append(token_id)
-            draft_probs.append(probs)
-            current_ids = torch.tensor([[token_id]], dtype=torch.long, device=input_ids.device)
+            draft_probs.append(probs.cpu())
+            current_ids = torch.tensor(
+                [[token_id]], dtype=torch.long, device=model_device
+            )
 
     return draft_tokens, draft_probs, past_key_values
 
@@ -99,9 +102,12 @@ def verify_draft_tokens(
     """
     K = len(draft_tokens)
     context_len = input_ids.size(1)
-    device = input_ids.device
+    model_device = next(target_model.parameters()).device
+    input_ids = input_ids.to(model_device)
 
-    draft_tensor = torch.tensor(draft_tokens, dtype=torch.long, device=device).unsqueeze(0)
+    draft_tensor = torch.tensor(
+        draft_tokens, dtype=torch.long, device=model_device
+    ).unsqueeze(0)
     full_input = torch.cat([input_ids, draft_tensor], dim=1)
 
     with torch.no_grad():
@@ -112,10 +118,10 @@ def verify_draft_tokens(
     target_probs_list: list[Tensor] = []
     for i in range(K):
         pos = context_len - 1 + i
-        probs = logits_to_probs(logits[pos], temperature)
+        probs = logits_to_probs(logits[pos], temperature).cpu()
         target_probs_list.append(probs)
 
-    bonus_probs = logits_to_probs(logits[context_len - 1 + K], temperature)
+    bonus_probs = logits_to_probs(logits[context_len - 1 + K], temperature).cpu()
     return target_probs_list, bonus_probs
 
 
@@ -159,7 +165,12 @@ def rejection_sample(
             accepted_draft_probs.append(p_d)
             accepted_target_probs.append(p_t)
         else:
-            residual = (target_probs_list[i] - draft_probs_list[i]).clamp(min=0.0)
+            t_p = target_probs_list[i]
+            d_p = draft_probs_list[i]
+            if d_p.size(0) != t_p.size(0):
+                # Pad the smaller vocab to match the larger (extra positions get prob 0).
+                d_p = torch.nn.functional.pad(d_p, (0, t_p.size(0) - d_p.size(0)))
+            residual = (t_p - d_p).clamp(min=0.0)
             residual_sum = residual.sum()
             if residual_sum > 0:
                 residual = residual / residual_sum
@@ -202,6 +213,9 @@ def generate_speculative(
     accumulator = MetricsAccumulator()
     generated: list[int] = []
 
+    draft_device = next(draft_model.parameters()).device
+    target_device = next(target_model.parameters()).device
+
     while len(generated) < max_new_tokens:
         context = torch.cat(
             [input_ids, torch.tensor([generated], dtype=torch.long, device=config.device)],
@@ -211,6 +225,8 @@ def generate_speculative(
         remaining = max_new_tokens - len(generated)
         K = min(config.K, remaining)
 
+        sync_if_cuda(draft_device)
+        sync_if_cuda(target_device)
         t_start = time.perf_counter()
 
         draft_tokens, draft_probs_list, _ = draft_K_tokens(
@@ -223,6 +239,8 @@ def generate_speculative(
             draft_tokens, draft_probs_list, target_probs_list, bonus_probs
         )
 
+        sync_if_cuda(draft_device)
+        sync_if_cuda(target_device)
         wall_time = time.perf_counter() - t_start
 
         accepted = draft_tokens[:k]
@@ -240,7 +258,7 @@ def generate_speculative(
         )
         accumulator.record(result)
 
-        if bonus_token == tokenizer.eos_token_id:
+        if is_eos(bonus_token, tokenizer):
             break
 
     text = decode(generated, tokenizer)

@@ -1,0 +1,13 @@
+draft:
+  name: distilgpt2
+  device: cpu
+  dtype: float32
+target:
+  name: gpt2
+  device: cpu
+  dtype: float32
+defaults:
+  K: 4
+  max_new_tokens: 32
+  temperature: 1.0
+  num_prompts: 5

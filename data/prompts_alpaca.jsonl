@@ -1,0 +1,200 @@
+{"id": 0, "dataset": "alpaca", "prompt": "Write a sentence using subordinating conjunctions."}
+{"id": 1, "dataset": "alpaca", "prompt": "Name three plants that grow best in humid climates."}
+{"id": 2, "dataset": "alpaca", "prompt": "Create an array with numbers from 0 to 10."}
+{"id": 3, "dataset": "alpaca", "prompt": "Arrange the following words in doyenical order."}
+{"id": 4, "dataset": "alpaca", "prompt": "Add one word to the sentence to make it more descriptive."}
+{"id": 5, "dataset": "alpaca", "prompt": "Identify and explain a new trend in digital marketing."}
+{"id": 6, "dataset": "alpaca", "prompt": "Identify 3 freshwater fish species"}
+{"id": 7, "dataset": "alpaca", "prompt": "Identify the correct example of a noun."}
+{"id": 8, "dataset": "alpaca", "prompt": "Redact the following sentence to remove all personal information: \"John Smith from Birmingham works in a factory.\""}
+{"id": 9, "dataset": "alpaca", "prompt": "Generate the names of four different fruits that start with the letter \"P\"."}
+{"id": 10, "dataset": "alpaca", "prompt": "In the following excerpt, change the adjectives to more exciting synonyms"}
+{"id": 11, "dataset": "alpaca", "prompt": "SInce the sentence has odd length number of words, select the middle two words of the sentence."}
+{"id": 12, "dataset": "alpaca", "prompt": "Translate English text to French."}
+{"id": 13, "dataset": "alpaca", "prompt": "Come up with 5 different movie titles that start with the word \"The\"."}
+{"id": 14, "dataset": "alpaca", "prompt": "Apply the magic of 8 formula to a number."}
+{"id": 15, "dataset": "alpaca", "prompt": "What term is used to describe when two companies join forces to create a larger company?"}
+{"id": 16, "dataset": "alpaca", "prompt": "Name 3 characters in the movie Frozen."}
+{"id": 17, "dataset": "alpaca", "prompt": "Change the ending to the assigned word."}
+{"id": 18, "dataset": "alpaca", "prompt": "Generate several examples of how technology can improve the way we learn."}
+{"id": 19, "dataset": "alpaca", "prompt": "Give an example of a market opportunity with blockchain technology."}
+{"id": 20, "dataset": "alpaca", "prompt": "Rewrite the sentence so it implies the opposite meaning: \"My boss was very pleased about my work.\""}
+{"id": 21, "dataset": "alpaca", "prompt": "Retrieve the relevant details from the news article."}
+{"id": 22, "dataset": "alpaca", "prompt": "Describe a web page in the following format:\n\nHeader, Body, Footer."}
+{"id": 23, "dataset": "alpaca", "prompt": "Given a photo of some mountains, generate a haiku about the scenery."}
+{"id": 24, "dataset": "alpaca", "prompt": "Construct a query to find related articles about a topic."}
+{"id": 25, "dataset": "alpaca", "prompt": "Recommned an effective method for managing time."}
+{"id": 26, "dataset": "alpaca", "prompt": "Given the prompt, suggest two possible solutions."}
+{"id": 27, "dataset": "alpaca", "prompt": "Generate an example of using the following function."}
+{"id": 28, "dataset": "alpaca", "prompt": "Explain linear regression in a simpler language."}
+{"id": 29, "dataset": "alpaca", "prompt": "Generate a warning message that could be used in a chatbot."}
+{"id": 30, "dataset": "alpaca", "prompt": "Type a review for Apple's latest Iphone."}
+{"id": 31, "dataset": "alpaca", "prompt": "For a given profession, introduce a key technology or tool currently used."}
+{"id": 32, "dataset": "alpaca", "prompt": "Create three possible titles for the following script"}
+{"id": 33, "dataset": "alpaca", "prompt": "Find the missing punctuation and add it to the sentence."}
+{"id": 34, "dataset": "alpaca", "prompt": "Come up with a way to express the following statement in a more persuasive way."}
+{"id": 35, "dataset": "alpaca", "prompt": "Design a database to keep track of an employee’s leave and holidays"}
+{"id": 36, "dataset": "alpaca", "prompt": "Name a common ingredient for this type of dish."}
+{"id": 37, "dataset": "alpaca", "prompt": "Come up with a possible explanation for why senior citizens are so affected by COVID-19"}
+{"id": 38, "dataset": "alpaca", "prompt": "Given a set of numbers, generate a suitable equation that relates the numbers."}
+{"id": 39, "dataset": "alpaca", "prompt": "Delete the extra words and make the sentence grammatical."}
+{"id": 40, "dataset": "alpaca", "prompt": "Compare and contrast the differences between a disk and tape backup."}
+{"id": 41, "dataset": "alpaca", "prompt": "Design a LinkedIn profile for a college freshman"}
+{"id": 42, "dataset": "alpaca", "prompt": "Compare the US educational system with the Indian education system."}
+{"id": 43, "dataset": "alpaca", "prompt": "Give an example of a situation that would call for the use of a collaborative filtering algorithm."}
+{"id": 44, "dataset": "alpaca", "prompt": "Create a sentence using the verb form of the word 'confident'"}
+{"id": 45, "dataset": "alpaca", "prompt": "Tell me an example of something that would cause a financial crisis."}
+{"id": 46, "dataset": "alpaca", "prompt": "Educate the readers about the water cycle in a concise manner."}
+{"id": 47, "dataset": "alpaca", "prompt": "Suggest three improvements for Wikipedia."}
+{"id": 48, "dataset": "alpaca", "prompt": "List three benefits of meditation"}
+{"id": 49, "dataset": "alpaca", "prompt": "Suggest an activity to actively involve a group of 10 people."}
+{"id": 50, "dataset": "alpaca", "prompt": "Name a few famous public figures from the 1980s in the US."}
+{"id": 51, "dataset": "alpaca", "prompt": "Convert the given linear equation from slope-intercept form to general form."}
+{"id": 52, "dataset": "alpaca", "prompt": "Choose the synonyms for the words provided in the input."}
+{"id": 53, "dataset": "alpaca", "prompt": "Research and explain how blockchain-based networks can be used to solve the double spending problem."}
+{"id": 54, "dataset": "alpaca", "prompt": "Generate a question to test the student's knowledge of geography."}
+{"id": 55, "dataset": "alpaca", "prompt": "Please provide a list of 4 best books to read."}
+{"id": 56, "dataset": "alpaca", "prompt": "Aim to reduce the following sentence without changing its meaning"}
+{"id": 57, "dataset": "alpaca", "prompt": "Create a flashcard that explains the concept of friction."}
+{"id": 58, "dataset": "alpaca", "prompt": "Use 5 words to explain the concept of artificial intelligence."}
+{"id": 59, "dataset": "alpaca", "prompt": "Output the time one hour from the given time"}
+{"id": 60, "dataset": "alpaca", "prompt": "You need to classify whether the following piece of text is an opinion or not. Output \"opinion\" if it is an opinion, output \"fact\" if it is not an opinion."}
+{"id": 61, "dataset": "alpaca", "prompt": "List two methods to ensure privacy is maintained while using the internet."}
+{"id": 62, "dataset": "alpaca", "prompt": "What is the converse of the statement: \"I will pass the test"}
+{"id": 63, "dataset": "alpaca", "prompt": "Describe the differences between a prokaryotic cell and an eukaryotic cell."}
+{"id": 64, "dataset": "alpaca", "prompt": "Write an essay analyzing the societal effects of technology."}
+{"id": 65, "dataset": "alpaca", "prompt": "State one interesting fact from the text."}
+{"id": 66, "dataset": "alpaca", "prompt": "How do you divide a time period of 1 hour into 10 parts?"}
+{"id": 67, "dataset": "alpaca", "prompt": "Suggest a method for selecting features for supervised learning."}
+{"id": 68, "dataset": "alpaca", "prompt": "Given a legal document, identify the relevant laws and regulations that apply."}
+{"id": 69, "dataset": "alpaca", "prompt": "Write a creative story about a time traveler."}
+{"id": 70, "dataset": "alpaca", "prompt": "Add a suitable preposition to the following sentence:\n\nHe refused to listen"}
+{"id": 71, "dataset": "alpaca", "prompt": "Explain why a given phenomenon occurs."}
+{"id": 72, "dataset": "alpaca", "prompt": "Explain the difference between an object and a class."}
+{"id": 73, "dataset": "alpaca", "prompt": "Tell me the method of transportation available between two cities."}
+{"id": 74, "dataset": "alpaca", "prompt": "Explain why the given characteristic is important for performance."}
+{"id": 75, "dataset": "alpaca", "prompt": "Describe the function and output of the following code:"}
+{"id": 76, "dataset": "alpaca", "prompt": "Compose a tweet about devoting the weekend for self-care."}
+{"id": 77, "dataset": "alpaca", "prompt": "Make a list of things that help people stay healthy."}
+{"id": 78, "dataset": "alpaca", "prompt": "Arrange the following items in order of their boiling point (lowest to highest)."}
+{"id": 79, "dataset": "alpaca", "prompt": "Find the cause and effect of the given sentence."}
+{"id": 80, "dataset": "alpaca", "prompt": "Rewrite the sentence using a causative verb and provide an example of the same."}
+{"id": 81, "dataset": "alpaca", "prompt": "Determine if the given proverb is historically accurate."}
+{"id": 82, "dataset": "alpaca", "prompt": "How could this figure be used in an essay about climate change?"}
+{"id": 83, "dataset": "alpaca", "prompt": "Collect 5 data points that are relevant to the following topic: the cost of higher education."}
+{"id": 84, "dataset": "alpaca", "prompt": "Tell me one positive aspect of the current world."}
+{"id": 85, "dataset": "alpaca", "prompt": "Rewrite a given sentence, but maintain its overall meaning."}
+{"id": 86, "dataset": "alpaca", "prompt": "Suggest two activities suitable for a 5-year-old kid to do over the weekend."}
+{"id": 87, "dataset": "alpaca", "prompt": "Reverse the words in the sentence so that they are in the correct order."}
+{"id": 88, "dataset": "alpaca", "prompt": "Delete the words that do not add meaning to this sentence:"}
+{"id": 89, "dataset": "alpaca", "prompt": "Describe the sound made by a thunderstorm."}
+{"id": 90, "dataset": "alpaca", "prompt": "Develop a database schema for a library system."}
+{"id": 91, "dataset": "alpaca", "prompt": "Generate an appropriate explanation to the comment in the code."}
+{"id": 92, "dataset": "alpaca", "prompt": "Create a JSON object based on the given description."}
+{"id": 93, "dataset": "alpaca", "prompt": "Summarize the given article into 5 sentences that include the main points."}
+{"id": 94, "dataset": "alpaca", "prompt": "Name three famous auto makers."}
+{"id": 95, "dataset": "alpaca", "prompt": "Given a prompt, generage a funny one-liner."}
+{"id": 96, "dataset": "alpaca", "prompt": "Explain what a web crawler does"}
+{"id": 97, "dataset": "alpaca", "prompt": "Generate an abstract for an article on the benefits of using artificial intelligence"}
+{"id": 98, "dataset": "alpaca", "prompt": "Build a binary classifier to differentiate between apples and oranges."}
+{"id": 99, "dataset": "alpaca", "prompt": "Create a modal view in a web application."}
+{"id": 100, "dataset": "alpaca", "prompt": "Rewrite this sentence using a vocabulary suitable for kindergarteners"}
+{"id": 101, "dataset": "alpaca", "prompt": "Come up with an invention to solve this problem."}
+{"id": 102, "dataset": "alpaca", "prompt": "Translate the sentence \"I come from a small village\" into Spanish"}
+{"id": 103, "dataset": "alpaca", "prompt": "Compare and contrast active listening and regular listening."}
+{"id": 104, "dataset": "alpaca", "prompt": "Summarize the importance of customer segmentation in two sentences."}
+{"id": 105, "dataset": "alpaca", "prompt": "Generate a chatbot script to help customers find a product."}
+{"id": 106, "dataset": "alpaca", "prompt": "Rewrite the following sentence with clearer language: \"Our department is looking for somebody who can help us with our project\"."}
+{"id": 107, "dataset": "alpaca", "prompt": "Describe the role of Data Science in AI-enabled decision making"}
+{"id": 108, "dataset": "alpaca", "prompt": "Summarize the story of The Little Prince."}
+{"id": 109, "dataset": "alpaca", "prompt": "Describe a method to manage stress during work."}
+{"id": 110, "dataset": "alpaca", "prompt": "Suggest a name for given concept."}
+{"id": 111, "dataset": "alpaca", "prompt": "Create a one-sentence summary of a given song."}
+{"id": 112, "dataset": "alpaca", "prompt": "Why is machine learning important for businesses?"}
+{"id": 113, "dataset": "alpaca", "prompt": "Explain the concept of 'Divide and Conquer'."}
+{"id": 114, "dataset": "alpaca", "prompt": "Describe how a basic computer virus works."}
+{"id": 115, "dataset": "alpaca", "prompt": "Identify one advantage of using electric cars"}
+{"id": 116, "dataset": "alpaca", "prompt": "Suggest four ways to make a travel experience more memorable"}
+{"id": 117, "dataset": "alpaca", "prompt": "Describe a photo of a girl in a pink dress."}
+{"id": 118, "dataset": "alpaca", "prompt": "From the following text, circle the nouns."}
+{"id": 119, "dataset": "alpaca", "prompt": "Explain what a smart speaker is"}
+{"id": 120, "dataset": "alpaca", "prompt": "What is the main difference between a search engine and a web browser?"}
+{"id": 121, "dataset": "alpaca", "prompt": "Provide a phrase that accurately describes a high-performance engine"}
+{"id": 122, "dataset": "alpaca", "prompt": "Write a sentence about the importance of environmental conservation."}
+{"id": 123, "dataset": "alpaca", "prompt": "Can you cite a headline from a recent news article?"}
+{"id": 124, "dataset": "alpaca", "prompt": "Identify the correct adverb and then explain what type of adverb it is."}
+{"id": 125, "dataset": "alpaca", "prompt": "Estimate how many hours of sleep is good for an adult."}
+{"id": 126, "dataset": "alpaca", "prompt": "Provide an example of a situation when a machine can outperform a human."}
+{"id": 127, "dataset": "alpaca", "prompt": "Reword the sentence: “She reads five chapters a day”"}
+{"id": 128, "dataset": "alpaca", "prompt": "Make a list of three ways to calm down when feeling anxious."}
+{"id": 129, "dataset": "alpaca", "prompt": "Determine the average per capita consumption of beef in Germany."}
+{"id": 130, "dataset": "alpaca", "prompt": "Develop a survey to survey the opinions of customers on a new product."}
+{"id": 131, "dataset": "alpaca", "prompt": "Rearrange the given text in alphabetical order."}
+{"id": 132, "dataset": "alpaca", "prompt": "Can you explain the rules of chess?"}
+{"id": 133, "dataset": "alpaca", "prompt": "Given a list of grocery items, create a grocery list for a family of four."}
+{"id": 134, "dataset": "alpaca", "prompt": "Identify the misplaced modifier and write the sentence without it."}
+{"id": 135, "dataset": "alpaca", "prompt": "Develop a strategy for negotiating better wages in the workplace."}
+{"id": 136, "dataset": "alpaca", "prompt": "Convert this text into a headline."}
+{"id": 137, "dataset": "alpaca", "prompt": "Write one paragraph explaining Newton's second law of motion."}
+{"id": 138, "dataset": "alpaca", "prompt": "Summarize the content of the article \"Understanding the Different Types of RNA\"."}
+{"id": 139, "dataset": "alpaca", "prompt": "Describe what type of visualizations might be produced from sales data."}
+{"id": 140, "dataset": "alpaca", "prompt": "Create a list of 10 fun activities for a family reunion."}
+{"id": 141, "dataset": "alpaca", "prompt": "Write a rap based on the topic of self-love"}
+{"id": 142, "dataset": "alpaca", "prompt": "What does the phrase \"Do More With Less\" mean?"}
+{"id": 143, "dataset": "alpaca", "prompt": "Rank the following songs according to their popularity (with 1 being the most popular and 3 the least popular)."}
+{"id": 144, "dataset": "alpaca", "prompt": "List five popular fruits eaten in the United States."}
+{"id": 145, "dataset": "alpaca", "prompt": "Identify the type of noun in the sentence: \"I ate an apple.\""}
+{"id": 146, "dataset": "alpaca", "prompt": "Give me a list of elements found in the Earth's atmosphere."}
+{"id": 147, "dataset": "alpaca", "prompt": "Find the median of the set of numbers {4, 10, 8, 11, 1}."}
+{"id": 148, "dataset": "alpaca", "prompt": "Design a poster about internet security."}
+{"id": 149, "dataset": "alpaca", "prompt": "Write a list of instructions on how to make French Fries."}
+{"id": 150, "dataset": "alpaca", "prompt": "Name the latest smartphone from Apple."}
+{"id": 151, "dataset": "alpaca", "prompt": "Translate the phrase \"the apple is red\" into French."}
+{"id": 152, "dataset": "alpaca", "prompt": "Describe the experience of eating at an Indian restaurant."}
+{"id": 153, "dataset": "alpaca", "prompt": "Construct a sentence expressing a feeling of pity."}
+{"id": 154, "dataset": "alpaca", "prompt": "Design an experiment to determine if smoking affects memory."}
+{"id": 155, "dataset": "alpaca", "prompt": "Given a search query, identify the intent of the query."}
+{"id": 156, "dataset": "alpaca", "prompt": "Describe how creating a budget can help with money management."}
+{"id": 157, "dataset": "alpaca", "prompt": "Construct an explanation of the definition of the word 'bounty'."}
+{"id": 158, "dataset": "alpaca", "prompt": "Classify the following movie as romance, thriller, action, or comedy."}
+{"id": 159, "dataset": "alpaca", "prompt": "Imagine you have a function 'my_func(str1, str2)'. What would be the expected output of my_func(\"Hello\", \"World\")?"}
+{"id": 160, "dataset": "alpaca", "prompt": "Describe the energy cycle of the sun."}
+{"id": 161, "dataset": "alpaca", "prompt": "Predict the impact would the given information have"}
+{"id": 162, "dataset": "alpaca", "prompt": "Identify which type of sentence structure this phrase belongs to."}
+{"id": 163, "dataset": "alpaca", "prompt": "Show how to make a cup of cappuccino coffee."}
+{"id": 164, "dataset": "alpaca", "prompt": "Calculate the sum of 17 and 5. Output one number."}
+{"id": 165, "dataset": "alpaca", "prompt": "Determine whether the car is moving or not."}
+{"id": 166, "dataset": "alpaca", "prompt": "Analyze how artificial intelligence is implemented in the healthcare sector."}
+{"id": 167, "dataset": "alpaca", "prompt": "Invent a new idea for a game using the following concepts."}
+{"id": 168, "dataset": "alpaca", "prompt": "Choose a random element from the following array \" [Apple, Pear, Cherry, Melon]\"."}
+{"id": 169, "dataset": "alpaca", "prompt": "Come up with an alternative title for the book: The Cat in the Hat."}
+{"id": 170, "dataset": "alpaca", "prompt": "Research and compare two common medical treatments for a condition."}
+{"id": 171, "dataset": "alpaca", "prompt": "Write a function that will calculate the distance in terms of longitude and latitude."}
+{"id": 172, "dataset": "alpaca", "prompt": "Given a passage and two intents, output the probability of the passage belonging to each intent."}
+{"id": 173, "dataset": "alpaca", "prompt": "Generate three words that describe a computer."}
+{"id": 174, "dataset": "alpaca", "prompt": "from the given text, generate a maximum of 10 keywords."}
+{"id": 175, "dataset": "alpaca", "prompt": "Create a budget for the following person for one month."}
+{"id": 176, "dataset": "alpaca", "prompt": "How can we use AI to help fight online harassment?"}
+{"id": 177, "dataset": "alpaca", "prompt": "Compare and contrast the economic benefits of wind energy vs. solar energy."}
+{"id": 178, "dataset": "alpaca", "prompt": "Name at least three types of clouds."}
+{"id": 179, "dataset": "alpaca", "prompt": "Name three organisms which are both plants and animals"}
+{"id": 180, "dataset": "alpaca", "prompt": "Create a magnetic headline to advertise the following product."}
+{"id": 181, "dataset": "alpaca", "prompt": "Explain in 50 words or less how customer service can impact customer loyalty."}
+{"id": 182, "dataset": "alpaca", "prompt": "Sort the list of states by their population"}
+{"id": 183, "dataset": "alpaca", "prompt": "Edit this sentence and make sure it is grammatically correct."}
+{"id": 184, "dataset": "alpaca", "prompt": "Rearrange the given word order to form a grammatically correct sentence."}
+{"id": 185, "dataset": "alpaca", "prompt": "Edit this sentence: \"I drive very quick fast.\""}
+{"id": 186, "dataset": "alpaca", "prompt": "Classify the fruit as a citrus or not a citrus."}
+{"id": 187, "dataset": "alpaca", "prompt": "What is the most important element of persuasive writing?"}
+{"id": 188, "dataset": "alpaca", "prompt": "Explain what pejorative language is"}
+{"id": 189, "dataset": "alpaca", "prompt": "Implement a program to reverse a string."}
+{"id": 190, "dataset": "alpaca", "prompt": "List 5 adjectives to describe the smell of freshly cut grass."}
+{"id": 191, "dataset": "alpaca", "prompt": "Describe the process for creating a PowerPoint presentation"}
+{"id": 192, "dataset": "alpaca", "prompt": "Write an annotation for a website about animal conservation."}
+{"id": 193, "dataset": "alpaca", "prompt": "Rewrite the following paragraph adding adjectives and adverbs."}
+{"id": 194, "dataset": "alpaca", "prompt": "Classify the following sentence: \"Trees absorb carbon dioxide.\""}
+{"id": 195, "dataset": "alpaca", "prompt": "Identify which of the following animals belong to the mammal family."}
+{"id": 196, "dataset": "alpaca", "prompt": "Suggest the best outfit for a cocktail party"}
+{"id": 197, "dataset": "alpaca", "prompt": "Rewrite the following paragraph for a younger audience."}
+{"id": 198, "dataset": "alpaca", "prompt": "Analyze the given data and make a conclusion."}
+{"id": 199, "dataset": "alpaca", "prompt": "How can I conserve water at home?"}
